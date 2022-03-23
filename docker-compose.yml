@@ -4,7 +4,7 @@ services:
     platform: linux/x86_64
     image: mysql:8.0
     volumes:
-      - ./src/test/resources:/docker-entrypoint-initdb.d
+      - ./artifacts/init_db:/docker-entrypoint-initdb.d
     ports:
       - '3306:3306'
     environment:
